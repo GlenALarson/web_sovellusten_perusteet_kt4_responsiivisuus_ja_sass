@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1200px) {
+    div#content {
+        flex-direction: column;
+
+        section {
+            width: 100%;
+            flex-direction: row;
+            margin: 0;
+            article {
+                flex: 50%;
+                div {
+                    img {
+                        height: 350px;
+                    }
+                }
+            }
+        }
+
+        aside {
+            width: 100vw;
+            padding: $general-padding;
+            padding-left: $general-padding / 2;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    div#content section {
+        flex-direction: column;
+    }
+}
